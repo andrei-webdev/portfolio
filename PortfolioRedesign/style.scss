@@ -80,11 +80,11 @@ body {
 .header {
     background-color: $bgColour;
     color: $whiteText;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     .bgArtefact_1 {
-        position: fixed;
+        position: absolute;
         left: 35%;        
         z-index: 0;
         img{
@@ -93,7 +93,7 @@ body {
     }
 
     .bgArtefact_2 {
-        position: fixed;
+        position: absolute;
         right: 0;
         bottom: 0;
         z-index: 0;
@@ -101,12 +101,12 @@ body {
     }
 
     .bgArtefact_3 {
-        position: fixed;
+        position: absolute;
         top: 35%;
         left: -12%;
 
         img {
-            position: fixed;
+            position: absolute;
             top: 35%;
             left: -12%;
         }
@@ -197,7 +197,7 @@ body {
 
     .headerContent {
         position: relative;
-        margin-top: 10vh;
+        margin-top: 3%;
         font-family: 'Poppins', cursive;
         padding-left: 7%;
         z-index: 100;
@@ -234,9 +234,9 @@ body {
                 font-size: 40px;
                 padding: 10px 20px 20px 0;
                 color: $whiteText;
-                transition: color 3s ease;
+                transition: color 0.5s ease;
 
-                :hover {
+                &:hover {
                     color: $contrastColour;
                 }
             }
@@ -244,36 +244,41 @@ body {
 
         .buttons{
             margin-top: 25px;
-        }
+            padding-bottom: 5%;
+        
 
-        .hire_btn {
-            background-color: $contrastColour;
-            border: none;
-            font-size: 24px;
-            color: $whiteText;
-            font-weight: lighter;
-            padding: 15px 50px;
-            border-radius: 50px;
-            transition: background-color 2s ease;
-            transition: border-color 2s ease;
+            .hire_btn {
+                background-color: $contrastColour;
+                border: none;
+                font-size: 24px;
+                color: $whiteText;
+                font-weight: lighter;
+                padding: 15px 50px;
+                border-radius: 50px;
+                transition: background-color 0.5s ease-in-out;
 
-            :hover {
-                background-color: none;
-                border-color: $contrastColour;
+                &:hover {
+                    background: none;
+                }
             }
-        }
 
-        .port_btn {
-            background: none;
-            border-color: $whiteText;
-            font-size: 24px;
-            font-weight: lighter;
-            color: $whiteText;
-            padding: 15px 50px;
-            border-radius: 50px;
-            margin-left: 10px;
-            transition: background-color 2s ease;
-            transition: border-color 2s ease;
+            .port_btn {
+                background: none;
+                border-color: $whiteText;
+                font-size: 24px;
+                font-weight: lighter;
+                color: $whiteText;
+                padding: 15px 50px;
+                border-radius: 50px;
+                margin-left: 10px;
+                transition: border-color 0.5s ease-in-out;
+
+                &:hover{
+                    border-color: transparent;
+                }
+
+                
+            }
         }
 
 

@@ -71,12 +71,12 @@ body {
 .header {
   background-color: #0E0C38;
   color: #fff;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
 .header .bgArtefact_1 {
-  position: fixed;
+  position: absolute;
   left: 35%;
   z-index: 0;
 }
@@ -86,20 +86,20 @@ body {
 }
 
 .header .bgArtefact_2 {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   z-index: 0;
 }
 
 .header .bgArtefact_3 {
-  position: fixed;
+  position: absolute;
   top: 35%;
   left: -12%;
 }
 
 .header .bgArtefact_3 img {
-  position: fixed;
+  position: absolute;
   top: 35%;
   left: -12%;
 }
@@ -204,7 +204,7 @@ body {
 
 .header .headerContent {
   position: relative;
-  margin-top: 10vh;
+  margin-top: 3%;
   font-family: 'Poppins', cursive;
   padding-left: 7%;
   z-index: 100;
@@ -243,19 +243,20 @@ body {
   font-size: 40px;
   padding: 10px 20px 20px 0;
   color: #fff;
-  -webkit-transition: color 3s ease;
-  transition: color 3s ease;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
-.header .headerContent .social a :hover {
+.header .headerContent .social a:hover {
   color: #FF0513;
 }
 
 .header .headerContent .buttons {
   margin-top: 25px;
+  padding-bottom: 5%;
 }
 
-.header .headerContent .hire_btn {
+.header .headerContent .buttons .hire_btn {
   background-color: #FF0513;
   border: none;
   font-size: 24px;
@@ -263,18 +264,15 @@ body {
   font-weight: lighter;
   padding: 15px 50px;
   border-radius: 50px;
-  -webkit-transition: background-color 2s ease;
-  transition: background-color 2s ease;
-  -webkit-transition: border-color 2s ease;
-  transition: border-color 2s ease;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
-.header .headerContent .hire_btn :hover {
-  background-color: none;
-  border-color: #FF0513;
+.header .headerContent .buttons .hire_btn:hover {
+  background: none;
 }
 
-.header .headerContent .port_btn {
+.header .headerContent .buttons .port_btn {
   background: none;
   border-color: #fff;
   font-size: 24px;
@@ -283,9 +281,11 @@ body {
   padding: 15px 50px;
   border-radius: 50px;
   margin-left: 10px;
-  -webkit-transition: background-color 2s ease;
-  transition: background-color 2s ease;
-  -webkit-transition: border-color 2s ease;
-  transition: border-color 2s ease;
+  -webkit-transition: border-color 0.5s ease-in-out;
+  transition: border-color 0.5s ease-in-out;
+}
+
+.header .headerContent .buttons .port_btn:hover {
+  border-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
