@@ -71,37 +71,43 @@ body {
 .header {
   background-color: #0E0C38;
   color: #fff;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .header .bgArtefact_1 {
   position: absolute;
-  left: 35%;
+  left: 35vw;
   z-index: 0;
 }
 
 .header .bgArtefact_1 img {
-  width: 75%;
+  width: 50%;
 }
 
 .header .bgArtefact_2 {
   position: absolute;
+  background: #000;
   right: 0;
   bottom: 0;
   z-index: 0;
 }
 
+.header .bgArtefact_2 img {
+  width: 50%;
+  background-position: right;
+}
+
 .header .bgArtefact_3 {
   position: absolute;
-  top: 35%;
-  left: -12%;
+  top: 35vh;
+  left: -12vw;
 }
 
 .header .bgArtefact_3 img {
   position: absolute;
-  top: 35%;
-  left: -12%;
+  top: 35vh;
+  left: -12vw;
 }
 
 .header .nav {
@@ -204,9 +210,9 @@ body {
 
 .header .headerContent {
   position: relative;
-  margin-top: 3%;
+  margin-top: 3vh;
   font-family: 'Poppins', cursive;
-  padding-left: 7%;
+  padding-left: 7vw;
   z-index: 100;
 }
 
@@ -287,5 +293,15 @@ body {
 
 .header .headerContent .buttons .port_btn:hover {
   border-color: transparent;
+}
+
+.content {
+  background-color: #040221;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content .image img {
+  width: 25%;
 }
 /*# sourceMappingURL=style.css.map */
